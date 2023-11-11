@@ -6,7 +6,7 @@ import numpy as np
 app = Flask(__name__)
 
 # Load the model (you need to adjust the path to your model)
-model = load_model('my_model.h5')
+model = load_model('api/my_model.h5')
 
 @app.route('/classify_image', methods=['POST'])
 def classify_image():
