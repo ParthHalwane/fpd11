@@ -8,7 +8,7 @@ app = Flask(__name__)
 # Load the model (you need to adjust the path to your model)
 model = load_model('api/my_model.h5')
 
-@app.route('/classify_image', methods=['POST'])
+@app.route('/classify_image', methods=['GET','POST'])
 def classify_image():
     try:
         # Assuming you have an 'image' field in the POST request with the image file
